@@ -30,3 +30,7 @@
 	* Buenas practicas, es mejor usar etiquetas especificas como v1.0, v1.1 en entornos de produccion para evitar inconsistencias.
 # What is a digest in the context of container images?
 Un digest es un identificador unico, algoa si como una huella digital, que se genera automaticamente para una imagen de contenedor. Este digest asegura que una imagen especifica no ha sido modificada y es exactamente la misma cada vez que la usas.
+*Como funciona*
+	* Cada imagen de contenedor se compone de varias capaz [archivos y configuraciones]
+	* Al crear o subir la imagen a un registro [como Docker Hub], segenera un digest usando un calculo matematico [hash]
+	* Si alguien cambia que sea un archivo dentro de la iamgen, el digest cambiara.
